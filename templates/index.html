@@ -1,0 +1,25 @@
+<!Doctype html>
+<html>
+<head>
+	<title>ML API</title>
+	
+</head>
+<body>
+     <form action="{{url_for('predict')}}", method="post">
+	<div class="Login">
+	<h1> PREDICT SALARY ANALYSIS</h1>
+	<input type="text", name="experience" placeholder="Experience" required="required"/>
+	<input type="text", name="test_score" placeholder="Test Score" required="required"/>
+	<input type="text", name="interview_score" placeholder="Interview Score" required="required"/>
+	
+	<button type="submit" class=btn"> PREDICT </button>
+       </form>
+    <br>
+    <br>
+    
+    <div>{{prediction_text}}<div>
+    </div>
+  
+
+</body>
+</html>
